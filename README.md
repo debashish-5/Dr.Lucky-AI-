@@ -235,23 +235,6 @@ This project bridges the gap between:
 
 ---
 
-## 🧠 How Lucky AI Thinks (Pipeline)
-
-```text
-Image Upload
-   ↓
-Grayscale Conversion
-   ↓
-Resize & Normalize
-   ↓
-CNN Model Inference
-   ↓
-Probability Scores
-   ↓
-Safety Threshold Logic
-   ↓
-Explainable Visual Dashboard
-
 
 
 
