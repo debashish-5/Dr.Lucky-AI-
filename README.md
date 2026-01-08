@@ -211,29 +211,6 @@ This project bridges the gap between:
   <img src="https://media.giphy.com/media/l0HlQ7LRalQqdWfao/giphy.gif" width="70%">
 </p>
 
----
-
-## 🧩 AI Modules
-
-<table align="center">
-<tr>
-<th>Module</th>
-<th>Input</th>
-<th>Output Classes</th>
-</tr>
-<tr>
-<td>🧠 Brain MRI</td>
-<td>MRI Scan</td>
-<td>No Tumor / Tumor Detected</td>
-</tr>
-<tr>
-<td>🫁 Chest X-ray</td>
-<td>X-ray Image</td>
-<td>Normal / Pneumonia</td>
-</tr>
-</table>
-
----
 
 
 
