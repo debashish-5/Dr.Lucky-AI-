@@ -252,15 +252,7 @@ Safety Threshold Logic
    ↓
 Explainable Visual Dashboard
 
-```
-## 👨‍💻 Author
-Debashish Parida
-AI • Data Science • Deep Learning Engineer
 
-<p align="center"> <a href="https://github.com/debashish-5"> <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github"> </a> <a href="https://www.linkedin.com/"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin"> </a> </p> <p align="center"> <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=140&section=footer&text=Lucky%20AI%20—%20Explainable%20AI%20Matters&fontSize=22" /> </p> ```
-.....
-<p align="center"> <img src="https://skillicons.dev/icons?i=python,tensorflow,keras,opencv,flask,html,css,js,git,github&perline=7" /> </p>
-<p align="center"> <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="65%"> </p>
 
 
 
