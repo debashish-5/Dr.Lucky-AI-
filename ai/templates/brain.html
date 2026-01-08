@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Upload Brain MRI</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <style>
+    /* ===== FULLSCREEN BACKGROUND VIDEO ===== */
+    .hero-video {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    /* ===== MEDICAL GRADIENT OVERLAY ===== */
+    .hero-overlay {
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(10, 30, 60, 0.55),
+        rgba(0, 120, 160, 0.55)
+      );
+      z-index: -1;
+    }
+
+    /* Keep uploader readable */
+    .uploader {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ===== HARD FORCE LEFT ALIGN (OVERRIDE EVERYTHING) ===== */
+
+    .uploader {
+      min-height: 100vh !important;
+      width: 100vw !important;
+      display: flex !important;
+      align-items: center !important;
+    }
+
+    .uploader-inner {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start !important;
+      padding-left: 6vw;
+    }
+
+    .uploader-card {
+      max-width: 460px;
+    }
+
+    /* Mobile fallback */
+    @media (max-width: 900px) {
+      .uploader-inner {
+        justify-content: center !important;
+        padding-left: 0;
+      }
+    }
+    .uploader-card {
+      transform: translateX(0);
+    }
+    
+    .uploader-card {
+      animation: slideIn 0.8s ease-out;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateX(-60px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+    .uploader{
+      display:flex;
+      justify-content:flex-start;
+      padding-left:6vw;
+    }
+    /* ===============================
+      PREMIUM GLASS UPLOADER CARD
+      =============================== */
+
+    .uploader{
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-left: 8vw;
+      padding-right: 8vw;
+    }
+
+    /* GLASS CARD */
+    .uploader-card{
+      max-width: 460px;
+      width: 100%;
+
+      background: rgba(255, 255, 255, 0.35);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+
+      border: 1px solid rgba(255,255,255,0.45);
+      border-radius: 18px;
+
+      box-shadow:
+        0 20px 45px rgba(0,0,0,0.18),
+        inset 0 1px 0 rgba(255,255,255,0.35);
+
+      padding: 24px;
+    }
+
+    /* TEXT FIX (NO MELT) */
+    .uploader-card h2{
+      color:#023a3d;
+      font-weight: 700;
+    }
+
+    .uploader-card p,
+    .uploader-card label{
+      color:#0a3f42;
+    }
+
+    /* INPUTS CLEAR */
+    .uploader-card input{
+      width: 100%;
+      margin-top: 12px;
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      background: rgba(255,255,255,0.92);
+    }
+
+    /* BUTTON */
+    .uploader-card button{
+      margin-top: 16px;
+      padding: 12px;
+      width: 100%;
+      border-radius: 12px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      background: linear-gradient(90deg,#8bffef,#9bffd7);
+      color: #05201f;
+      transition: all .25s ease;
+    }
+
+    .uploader-card button:hover{
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    }
+
+    /* VIDEO DARKEN (GLASS POP) */
+    .hero-video{
+      filter: brightness(0.6) saturate(1.1);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px){
+      .uploader{
+        justify-content: center;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+    <!-- 🔥 FULLSCREEN BACKGROUND VIDEO -->
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="https://cdn.pixabay.com/video/2022/06/10/119848-719283265_large.mp4" type="video/mp4">
+  </video>
+  <header class="top-nav small">
+    <div class="brand">⏻Lucky AI</div>
+    <nav><a href="/">Home</a></nav>
+  </header>
+
+  <section class="uploader">
+    <div class="uploader-card">
+      <h2>Brain MRI — Upload</h2>
+      <p class="muted">Upload a Brain MRI image (jpg/png). This demo is for education and research only.</p>
+      {% if error %}<div class="alert">{{ error }}</div>{% endif %}
+      <form method="POST" enctype="multipart/form-data" id="uploadForm">
+        <input type="file" name="image" accept="image/*" id="fileInput" required>
+        <div id="previewBox"></div>
+        <button class="btn primary">Analyze Brain MRI</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

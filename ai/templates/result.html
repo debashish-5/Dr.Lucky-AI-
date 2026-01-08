@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Prediction Result</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header class="top-nav small">
+    <div class="brand">⏻Lucky AI</div>
+    <nav><a href="/">Home</a></nav>
+  </header>
+
+  <section class="result-dashboard">
+    {% if error %}
+      <div class="alert">{{ error }}</div>
+    {% else %}
+      <div class="grid">
+        <div class="card big">
+          <h3>{{ model_name }} Result</h3>
+          <img src="{{ image }}" alt="uploaded" class="result-image">
+          <h2 class="result-label">{{ result }}</h2>
+          <p class="muted">Educational demo. Consult a medical professional for a clinical diagnosis.</p>
+        </div>
+
+        <div class="card">
+          <h4>Bar Chart</h4>
+          <img src="{{ charts.bar }}" alt="bar" class="chart-img">
+        </div>
+
+        <div class="card">
+          <h4>Pie Chart</h4>
+          <img src="{{ charts.pie }}" alt="pie" class="chart-img">
+        </div>
+
+        <div class="card">
+          <h4>Confidence Table</h4>
+          <img src="{{ charts.table }}" alt="table" class="chart-img">
+        </div>
+
+        <div class="card">
+          <h4>Heatmap Overlay</h4>
+          {% if charts.heat %}
+            <img src="{{ charts.heat }}" alt="heat" class="chart-img">
+          {% else %}
+            <p class="muted">Heatmap not available for this model (Grad-CAM requires Conv2D layers).</p>
+          {% endif %}
+        </div>
+        {% if charts.gauge %}
+        <div class="card">
+          <h4>Confidence Gauge</h4>
+          <img src="{{ charts.gauge }}" class="chart-img">
+        </div>
+        {% endif %}
+      </div>
+
+      <div style="margin:24px 0; margin-left:18px">
+        <a class="btn outline" href="/">Return Home</a>
+      </div>
+    {% endif %}
+  </section>
+</body>
+</html>

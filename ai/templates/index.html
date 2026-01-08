@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AI Medical Intelligence — Demo</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header class="top-nav">
+    <div class="brand">⏻Lucky AI • Demo</div>
+    <nav class="nav">
+      <ul>
+        <li class="nav-item"><a href="/">Home</a></li>
+        <li class="nav-item has-mega"><a href="#">Explore</a>
+          <div class="mega">
+            <div class="mega-left">
+              <h3>High-quality previews</h3>
+              <p>Click Explore to preview high-res images & a demo video.</p>
+              <div class="mega-gallery">
+                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b" alt="brain">
+                <img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144" alt="xray">
+              </div>
+            </div>
+            <div class="mega-right">
+              <h3>Demo Video</h3>
+              <video controls muted loop class="mega-video" playsinline>
+                <source src="https://www.shutterstock.com/shutterstock/videos/3815026711/preview/stock-footage-hiking-man-and-friends-with-walking-in-woods-for-travel-adventure-sightseeing-and-fresh-air.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a href="/brain">Brain MRI</a></li>
+        <li class="nav-item"><a href="/xray">Chest X-ray</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="https://www.shutterstock.com/shutterstock/videos/3797127303/preview/stock-footage-x-ray-report-close-up-k-footage-medical-health-care-close-up.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-left">
+        <h1 id="typed"></h1>
+        <p class="hero-sub">Educational demo: AI-assisted visualization of Brain MRI and Chest X-ray images for research & awareness — not a medical diagnosis tool.</p>
+        <div class="hero-actions">
+          <a href="/xray" class="btn primary">Analyze Chest X-ray</a>
+          <a href="/brain" class="btn outline">Analyze Brain MRI</a>
+        </div>
+
+        <div class="features">
+          <div class="feature-card">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995" alt="ai">
+            <h4>High-Precision AI Diagnostics</h4>
+            <p>Stunning 4K Visuals for AI Diagnostics.</p>
+          </div>
+          <div class="feature-card">
+            <img src="https://images.unsplash.com/photo-1581594549595-35f6edc7b762" alt="hospital">
+            <h4>Interactive dashboard</h4>
+            <p>Multiple visualizations per prediction.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- <div class="cards-stack">
+          <div class="side-card"> <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b" alt=""><div class="card-caption">Brain Awareness</div></div>
+          <div class="side-card"> <img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144" alt=""><div class="card-caption">Chest X-ray</div></div>
+        </div> -->
+      </div>
+
+    </div>
+  </main>
+
+  <section class="awareness">
+    <div class="awareness-card">
+      <img src="https://media.gettyimages.com/id/1152219092/photo/brain-tumor-illustration.jpg?s=612x612&w=0&k=20&c=XW-2jUBAUBHijlhhfP9RPpf2zEJ_VFdliD3daWEmGJQ=" alt="brain">
+      <div>
+        <h2>Brain Tumor Awareness</h2>
+        <p>Brain tumors are abnormal growths of cells inside the skull. Timely consultation with medical professionals is essential. AI in this demo assists in research and imaging interpretation but is not a diagnostic substitute.</p>
+      </div>
+    </div>
+
+    <div class="awareness-card">
+      <img src="https://media.gettyimages.com/id/1773970411/photo/virus.jpg?s=612x612&w=0&k=20&c=mLdvZrrkz0hsayVpPzYkc6ai2epiuBibOk5BM6l02Ew=" alt="xray">
+      <div>
+        <h2>Pneumonia Awareness</h2>
+        <p>Pneumonia is an infection of the lungs. Chest X-rays are used to help identify patterns. This demo shows how AI models can highlight areas of interest for research.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
