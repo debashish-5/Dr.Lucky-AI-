@@ -176,12 +176,7 @@ Data Science • Deep Learning • AI Engineering
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:22c1c3,100:fdbb2d&height=260&section=header&text=Lucky%20AI&fontSize=68&fontAlignY=38&desc=Medical%20AI%20Visualization%20Reinvented&descAlignY=60" />
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Deep%20Learning-CNN-blueviolet?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Medical-AI-success?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Flask-Full%20Stack-black?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Status-Research%20Demo-orange?style=for-the-badge">
-</p>
+
 
 ---
 
