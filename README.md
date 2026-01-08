@@ -168,14 +168,6 @@ Data Science • Deep Learning • AI Engineering
 
 ##### AGIANNN JUST IEW
 
-# 🧠✨ Lucky AI  
-## AI-Powered Medical Image Intelligence Platform  
-### Brain MRI & Chest X-ray | Research • Awareness • Education
->
-
-
-
----
 
 
 
