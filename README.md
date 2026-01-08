@@ -185,31 +185,7 @@ Data Science • Deep Learning • AI Engineering
 
 ---
 
-## 🌍 Project Vision
 
-**Lucky AI** is a **next-generation AI research & awareness platform** that demonstrates how **deep learning models interpret medical images** while keeping **AI decisions transparent, explainable, and safe**.
-
-This project bridges the gap between:
-- ❌ Black-box AI predictions  
-- ✅ Human-understandable medical insights  
-
-> ⚠️ **Important Notice**  
-> Lucky AI is **NOT a medical diagnostic tool**.  
-> It is built for **learning, visualization, and awareness only**.
-
----
-
-## 🎥 Immersive UI Experience
-
-- 🎬 Full-screen medical background videos  
-- 🪟 Glassmorphism cards with blur  
-- ✨ Smooth hover animations  
-- 🎨 Healthcare-grade color system  
-- 📱 Fully responsive UI  
-
-<p align="center">
-  <img src="https://media.giphy.com/media/l0HlQ7LRalQqdWfao/giphy.gif" width="70%">
-</p>
 
 
 
