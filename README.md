@@ -171,10 +171,7 @@ Data Science • Deep Learning • AI Engineering
 # 🧠✨ Lucky AI  
 ## AI-Powered Medical Image Intelligence Platform  
 ### Brain MRI & Chest X-ray | Research • Awareness • Education
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:22c1c3,100:fdbb2d&height=260&section=header&text=Lucky%20AI&fontSize=68&fontAlignY=38&desc=Medical%20AI%20Visualization%20Reinvented&descAlignY=60" />
-</p>
+>
 
 
 
